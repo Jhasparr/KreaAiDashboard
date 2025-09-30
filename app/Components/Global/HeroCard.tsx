@@ -14,7 +14,7 @@ export default function HeroCard({
   image = "",
 }: CardProps) {
   return (
-    <div className="grid mb-6  grid-cols-6 gap-6 hover:bg-gray-50 dark:active:bg-[#212121]  active:bg-gray-50  dark:hover:bg-[#212121] p-2 rounded-2xl  ">
+    <div className="grid mb-6 grid-cols-6 gap-6 hover:bg-gray-50 dark:active:bg-[#212121]  active:bg-gray-50  dark:hover:bg-[#212121] p-2 rounded-2xl  ">
       <div className="shadow-md md:w-15 w-13 h-13 md:h-15 rounded-lg relative col-span-1 ">
         <Image
           src={image}
@@ -23,7 +23,7 @@ export default function HeroCard({
           className="w-13 h-13 object-cover rounded-lg"
         />
       </div>
-      <div className="col-span-4 ml-2">
+      <div className="col-span-4 md:ml-0 ml-2">
         <div className="flex flex-row space-x-2 items-center mb-0 ">
           <h2 className="md:text-[18px] text-normal font-bold">{title}</h2>
           {isNew && (

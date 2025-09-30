@@ -34,7 +34,8 @@ const GeneralCarousel: React.FC<GeneralCarouselProps> = ({ settings = {}, data }
   );
 
   const sliderSettings: Settings = {
-  
+    
+
     nextArrow: <CustomNextArrow />,
     prevArrow: <CustomPrevArrow />,
     ...settings,

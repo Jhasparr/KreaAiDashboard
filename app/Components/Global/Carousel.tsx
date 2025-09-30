@@ -3,6 +3,9 @@ import React from "react";
 import PictureCard from "../Global/PictureCard";
 import GeneralCarousel from "../Global/GeneralCarousel";
 import { Settings } from "react-slick";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+
 
 type Service = {
   id: number;
@@ -74,12 +77,23 @@ const ServicesCarousel: React.FC = () => {
     speed: 500,
     autoplay: true,
     autoplaySpeed: 3000,
+    
     initialSlide: 0,
     responsive: [
+        {
+        breakpoint: 2024,
+        settings: {
+          slidesToShow: 1.5,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+      
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 1.5,
           slidesToScroll: 1,
           infinite: true,
           dots: true,

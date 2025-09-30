@@ -75,7 +75,7 @@ export default function SecondaryHero() {
         </div>
 
 {/* cards rendered */}
-        <div className="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1  ">
+        <div className="grid xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 grid-cols-1  ">
           {mainCard.map((index, key) => (
             <HeroCard key={key} {...index} />
           ))}
